@@ -4,3 +4,5 @@ CREATE TABLE [catalogo].[Producto]
 [nomprod] [varchar] (40) COLLATE Modern_Spanish_CI_AS NULL
 ) ON [Secundario]
 GO
+ALTER TABLE [catalogo].[Producto] ADD CONSTRAINT [Pk_Producto] PRIMARY KEY CLUSTERED  ([codpro]) ON [Secundario]
+GO

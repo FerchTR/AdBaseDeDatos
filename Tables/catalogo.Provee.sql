@@ -5,3 +5,5 @@ CREATE TABLE [catalogo].[Provee]
 [Stock] [smallint] NULL
 ) ON [Secundario]
 GO
+ALTER TABLE [catalogo].[Provee] ADD CONSTRAINT [Pk_Provee] PRIMARY KEY CLUSTERED  ([codprov], [codpro]) ON [Secundario]
+GO

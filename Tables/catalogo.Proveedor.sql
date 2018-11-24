@@ -4,3 +4,5 @@ CREATE TABLE [catalogo].[Proveedor]
 [nomprov] [varchar] (40) COLLATE Modern_Spanish_CI_AS NULL
 ) ON [Secundario]
 GO
+ALTER TABLE [catalogo].[Proveedor] ADD CONSTRAINT [Pk_Proveedor] PRIMARY KEY CLUSTERED  ([codprov]) ON [Secundario]
+GO
